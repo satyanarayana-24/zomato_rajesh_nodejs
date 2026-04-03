@@ -25,8 +25,6 @@ pipeline {
         sh 'npm install & npm run build'
     }
 }
-        }
-    }
         stage('JENKINS TO NEXUS') {
         steps {
           withMaven(jdk: 'jdk21', nodejs: 'node23', traceability: true) {
