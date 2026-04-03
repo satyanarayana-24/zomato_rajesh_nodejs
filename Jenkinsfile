@@ -31,7 +31,6 @@ stage('JENKINS TO NEXUS') {
         withMaven(jdk: 'jdk21', traceability: true) {
             sh 'npm install'
             sh 'npm run build'
-            sh 'npm run deploy'
         }
     }
 }
