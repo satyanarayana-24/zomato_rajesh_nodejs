@@ -3,9 +3,8 @@ pipeline {
     tools {
     jdk 'jdk21'
     nodejs 'node23'
-    sonar 'sonar-scanner'
 }
-
+    
     environment {
         SONARQUBE_ENV = 'sq'
         DOCKER_IMAGE = "rajeshtutta123/zomato"
