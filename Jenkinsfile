@@ -3,7 +3,7 @@ pipeline {
     tools {
     jdk 'jdk21'
     nodejs 'node23'
-    sonarQubeScanner 'sonar-scanner'
+    sonar 'sonar-scanner'
 }
 
     environment {
