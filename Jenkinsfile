@@ -4,7 +4,6 @@ pipeline {
     tools {
         jdk 'jdk21'
         nodejs 'node23'
-        sonarRunner 'sonar-scanner'
     }
 
     environment {
