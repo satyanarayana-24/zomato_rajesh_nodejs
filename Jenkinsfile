@@ -110,9 +110,9 @@ pipeline {
             }
         }
 
-        stage('Install Helm') {
+        stage('Verify Helm') {
             steps {
-                sh 'curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash'
+                sh 'helm version'
             }
         }
 
