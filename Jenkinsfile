@@ -4,20 +4,21 @@ pipeline {
     tools {
         jdk 'jdk21'
         nodejs 'node23'
+        sonarScanner 'sonar-scanner'
     }
 
     environment {
-        SONARQUBE_ENV = 'sq'
+        SONARQUBE_ENV = 'SonarQube'
         DOCKER_IMAGE = "rajeshtutta123/zomato"
-        AWS_DEFAULT_REGION = 'us-east-1'
-        RECIPIENTS = 'rajeshtutta123@gmail.com'
+        AWS_DEFAULT_REGION = 'us-west-1'
+        RECIPIENTS = 'vamsinath.05@gmail.com'
     }
 
     stages {
 
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/rajeshtutta/zomato.git'
+                git branch: 'main', url: 'https://github.com/CVN9696/zomato-nodejs.git'
             }
         }
 
